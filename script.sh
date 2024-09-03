@@ -1,4 +1,4 @@
-#Lineage-20 build_script_blossom
+#ProjectEverest-14 build_script_mi439
 
 # Remove some stuffs
 rm -rf .repo/local_manifests/ 
@@ -15,10 +15,10 @@ echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
-# Initialize Lineage-20 repo
+# Initialize ProjectEverest-14 repo
 repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
 echo "===================================="
-echo "Initializing Lineage-20 repo was success..."
+echo "Initializing ProjectEverest-14 repo was success..."
 echo "===================================="
 
 # Sync the repositories
@@ -34,9 +34,9 @@ echo "===================================="
 export BUILD_USERNAME=AsTechpro20
 export BUILD_HOSTNAME=crave
 
-#Building Lineage-20
+#Building ProjectEverest-14
 echo "===================================="
-echo "Building Lineage-20..."
+echo "Building ProjectEverest-14..."
 echo "===================================="
 . build/envsetup.sh
 lunch lineage_Mi439-user
