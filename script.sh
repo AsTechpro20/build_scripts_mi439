@@ -34,15 +34,10 @@ echo "===================================="
 export BUILD_USERNAME=AsTechpro20
 export BUILD_HOSTNAME=crave
 
-# Set up build environment
-echo "===================================="
-echo "Setting up build environment..."
-echo "===================================="
-source build/envsetup.sh
-
 #Building Lineage-20
 echo "===================================="
 echo "Building Lineage-20..."
 echo "===================================="
-lunch lineage_Mi439-ap2a-user
+. build/envsetup.sh
+lunch lineage_Mi439-user
 mka everest -j$(nproc --all)
