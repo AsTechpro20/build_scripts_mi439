@@ -44,5 +44,5 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Lineage-20..."
 echo "===================================="
-lunch lineage_Mi439_4_19-user || lunch lineage_Mi439-user
+lunch lineage_Mi439-ap2a-user
 mka everest -j$(nproc --all)
